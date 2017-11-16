@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,nofootinbib]{revtex4-1}
+\documentclass[10pt,a4paper,nofootinbib]{revtex4-1}
 \usepackage[latin1]{inputenc}
 \usepackage{graphicx}
 \usepackage{geometry}
@@ -104,15 +104,15 @@
 
 \begin{document}
 
-\title{Unifying LQG and String Theory}
-\date{Sep 25, 2017}
+\title{Connecting Loop Quantum Gravity and String Theory via Quantum Geometry}
+\date{\today}
 
 \author{Deepak Vaid}
 \affiliation{Department of Physics \\ National Institute of Technology Karnataka (NITK)}
 \email{deepak@nitk.edu.in}
 
 \begin{abstract}
-	We argue that String Theory and Loop Quantum Gravity can be thought of as describing different regimes of a single unified theory of quantum gravity. LQG can be thought of as providing the pre-geometric exoskeleton out of which macroscopic geometry emerges and String Theory then becomes the \emph{effective} theory which describes the dynamics of that exoskeleton. Such a fusion of these two areas can allow us to move beyond the lack of self-consistency in either framework, when considered individually as complete theories of quantum gravity, towards a complete, consistent theory of quantum gravity.
+	We argue that String Theory and Loop Quantum Gravity can be thought of as describing different regimes of a single unified theory of quantum gravity. LQG can be thought of as providing the pre-geometric exoskeleton out of which macroscopic geometry emerges and String Theory then becomes the \emph{effective} theory which describes the dynamics of that exoskeleton. The core of the argument rests on the claim that the Nambu-Goto action of String Theory can be viewed as the expectation value of the LQG area operator evaluated on the string worldsheet.
 \end{abstract}
 
 \maketitle
@@ -122,15 +122,24 @@
 
 \section{Strings vs. Loops}\label{sec:comparison}
 
+\begin{comment}
 Its a truth universally acknowledged, that in order to go \emph{beyond spacetime} one needs a consistent, complete theory of quantum gravity. Two of the strongest contenders for this crown are Loop Quantum Gravity (LQG) \cite{Ashtekar1991Lectures, Rovelli2011Zakopane, Ashtekar2004Background} and String Theory \cite{Tong2010Lectures,Zwiebach2009A-First,Polchinski1998aString}. Of these, string theory has been around for much longer, is more mature and has a far greater fan following. LQG is like David to string theory's Goliath: younger, smaller in stature but with the potential to unseat the presumed champion.
 
 Seen from within the heart of each respective side's territory, the other side appears to be deeply flawed, riddled with inconsistencies and ultimately doomed to fail. For instance in \cite[Sec. 4, pg 6]{t-Hooft2016Natures}, 't Hooft refers to the related approaches of causal sets, causal dynamical triangulations and LQG, as ``\emph{completely wild concoctions that serious researchers have come up with}'' and describes them as the product of ``\emph{phantasy}''. From the LQG side, Lee Smolin has this to say in his book length critique of string theory \cite{Smolin2006The-trouble}: \emph{some string theorists prefer to believe that string theory is too arcane to be understood by human beings, rather than consider the possibility that it might just be wrong.} Clearly, the practitioners of both LQG and string theory have deeply held beliefs and strong feelings about any potential trespassers on their respective intellectual territory.
 
 However, seen from the viewpoint of a neutral and, hopefully to some degree objective observer, this is not the life or death feud as it is made out to be by some, but rather simply a disagreement between two groups who, without realizing it, have been following different paths which lead to the same ultimate destination. Indeed the similarities between LQG and string theory are far too many to be mere coincidence. The following observations hold true for both fields:
+\end{comment}
+
+There are several competing candidates for a theory of quantum gravity. Two of the strongest contenders are Loop Quantum Gravity (LQG) \cite{Ashtekar1991Lectures, Rovelli2011Zakopane, Ashtekar2004Background} and String Theory \cite{Tong2010Lectures,Zwiebach2009A-First,Polchinski1998aString}. Of these, string theory has been around for much longer, is more mature and has a far greater number of practitioners. LQG is younger, with fewer adherents, but still with the potential to present a serious challenge to the supremacy of String Theory.
+
+There exist critiques of both approaches. In \cite[Sec. 4, pg 6]{t-Hooft2016Natures}, 't Hooft refers to the related approaches of causal sets, causal dynamical triangulations and LQG, as ``\emph{wild concoctions}''. From the LQG side, Lee Smolin has this to say \cite{Smolin2006The-trouble}: \emph{``some string theorists prefer to believe that string theory is too arcane to be understood by human beings, rather than consider the possibility that it might just be wrong''}. Of course, these statements do not necessarily reflect that present views of either of these researchers or of the research community at large, but they do give a general idea of the gulf that divides the two communities.
+
+In this note we would like to suggest that rather than an ``either/or'' situation, one can instead have the best of both worlds. The commonalities between the two approaches are far greater than their apparent differences and that both frameworks provide essential conceptual constructs that will go into any final theory of quantum gravity. The following observations hold true for both fields:
+
 \begin{enumerate}
 	\item \textbf{fundamental degrees of freedom are the same} - extended one-dimensional objects referred to as ``strings'' by string theorists and as ``holonomies'' by LQG-ists.
-	\item \textbf{identical predictions for the Bekenstein-Hawking entropy of black holes} are obtained\footnote{Though note \cite{Sen2012Logarithmic,Sen2014Microscopic} where disagreements between the two sets of calculations are pointed out. Though certain factors are not the same, the overall form of the entropy area relation including logarithmic corrections is the same. The differences could possibly be traced to the use of Euclidean geometry to determine black hole entropy in string theory. This introduces ingredients which are missing in the LQG calculation.}, albeit both fields follow different routes to get there.
-	\item \textbf{geometry becomes discrete, or more appropriately, ``quantized'', as one approaches the Plack scale} and the continuum approximation of a smooth background spacetime breaks down. In string theory this happens because closed strings cannot shrink to zero size due to quantum fluctuations. In LQG there is a natural and explicit construction \cite{Ashtekar1992Weaving,Rovelli1993Area,Rovelli1994Discreteness} of quantum operators for area and volume which have a discrete spectrum and whose minimum eigenvalues are greater than zero.
+	\item \textbf{identical predictions \cite{Kaul2012Entropy,Sen2012Logarithmic} for the Bekenstein-Hawking entropy of black holes} are obtained\footnote{Though note \cite{Sen2012Logarithmic,Sen2014Microscopic} where disagreements between the two sets of calculations are pointed out. Though certain factors are not the same, the overall form of the entropy area relation including logarithmic corrections is the same. The differences could possibly be traced to the use of Euclidean geometry to determine black hole entropy in string theory. This introduces ingredients which are missing in the LQG calculation.}, albeit both fields follow different routes to get there.
+	\item \textbf{geometry becomes discrete, or more appropriately, ``quantized'', as one approaches the Planck scale} and the continuum approximation of a smooth background spacetime breaks down. In string theory this happens because closed strings cannot shrink to zero size due to quantum fluctuations. In LQG there is a natural and explicit construction \cite{Ashtekar1992Weaving,Rovelli1993Area,Rovelli1994Discreteness} of quantum operators for area and volume which have a discrete spectrum and whose minimum eigenvalues are greater than zero.
 	\item \textbf{coherent, consistent description of matter degrees of freedom is missing} in both LQG and string theory. Though one can always add matter \emph{by hand} to either theory, it would be much more satisfying if the particles of the Standard Model were to arise naturally as geometrical objects which are part and parcel of either theory. Such proposals do exist \cite{Bilson-Thompson2005A-topological,Bilson-Thompson2006Quantum,Wan2007Braid, Vaid2010Embedding} though they are as yet not successful in explaining the full phenomenology and spectrum of the Standard Model. Remarkably in both LQG and string theory, the basic notions are identical. The end points of spin-network edges in LQG \cite{Morales-Tecotl1994Fermions} or open strings with ends attached to two different D-branes in string theory \cite[Ch. 21]{Zwiebach2009A-First}, play the role of fermions.
 	\item \textbf{state space of LQG and string theory can be mapped onto each other}. In LQG the kinematical Hilbert space consists of graphs with edges labeled by representations of $ SU(2) $ and edges labeled by invariant $ SU(2) $ tensors. As it so happens, string theory also contains very similar structures which go by the name of ``string networks''. This similarity was alluded to in an older paper by Ashoke Sen \cite{Sen1997String}:
 	\begin{quote}
@@ -138,9 +147,11 @@ However, seen from the viewpoint of a neutral and, hopefully to some degree obje
 	\end{quote}
 \end{enumerate}
 
-One could go on to find more areas of agreement between LQG and string theory (and also more areas of disagreement) but to any reasonable person these five points should provide sufficient inspiration to explore what form an ultimate unification of LQG and string theory might take.
+One could go on to find more areas of agreement between LQG and string theory (and also several areas of disagreement) but, hopefully, these five points should provide sufficient justification to expend some effort in exploring what form a unified framework, which incorporates the essential insights of both LQG and String Theory, might take.
 
 Apart from the five points outlined above, there is a very crucial aspect which connects both string theory and LQG. This has to do with the definition of the action associated with a string in string theory and the quantum operator for area which arises in LQG and will form the core of our argument for the existence of a clear connection between LQG and string theory.
+
+There exist several works in the literature \cite{Thiemann2004The-LQG-String:,Gambini2014Emergence,Bodendorfer2015A-note,Cai2017The-String,Smolin1998Strings} which have explored the question of a possible relationship between LQG and String Theory at varying levels of rigor. The recent work \cite{Huggett2017The-Atemporal} in particular explores the question of the emergence of spacetime from both String Theory and LQG.
 
 The plan of this work is as follows. In \autoref{sec:area-operator} we provide a lightning introduction to LQG and introduce the area operator. In \autoref{sec:string-geometry} we discuss how the low-energy effective field theory emerges from the string action and what this entails for the relation between quantum geometry and string theory. In \autoref{sec:pregeom-2} we argue that the Nambu-Goto string action can be see as arising from quantum geometric constructs which are present in LQG and finally in \autoref{sec:discussion} we conclude with some thoughts on the present situation and future developments.
 
@@ -298,22 +309,24 @@ One consequence of the discrete nature of the string worldsheet is that, as ment
 
 \section{Discussion}\label{sec:discussion}
 
-We have presented a rough outline of a method in which one can resolve the central challenges of both LQG and string theory. The problem with LQG is the lack of a clear method to obtain a semiclassical spacetime geometry in the limit of large graph states. The flaw with string theory, in the author's humble opinion, is the presumption of the existence of a background geometry on which the string can propagate. Both of these problems can be cured by viewing the Nambu-Goto action, and the geometry of the string worldsheet, as arising from a pre-geometry which can be described in the language of LQG. From this perspective, string theory is simply the glue which connects a quantum theory of geometry (LQG) to a classical theory of gravity with matter such the one given in \eqref{eqn:effective-action}.
+We have presented a rough outline of a method in which one can resolve the central challenges of both LQG and string theory. The problem with LQG is the lack of a clear method to obtain a semiclassical spacetime geometry in the limit of large graph states. The flaw with string theory, in the author's humble opinion, is the presumption of the existence of a background geometry on which the string can propagate. Both of these problems can be cured by viewing the Nambu-Goto action, and the geometry of the string worldsheet, as arising from a pre-geometry which can be described in the language of LQG. From this perspective, String Theory is the glue which connects a quantum theory of geometry (LQG) to a classical theory of gravity with matter such the one given in \eqref{eqn:effective-action}.
 
-The acceptance of such a viewpoint is not going to be easy for either camp. String theorists would have to accept that the vast jungle of compactifications and the seemingly impenetrable string landscape is a consequence of ignoring the quantum nature of geometry. LQG-ists would have to give up the belief that framework of pure LQG alone can provide a complete theory of quantum gravity. They would have to accept that the tools and techniques of string theory are mandatory if a clear understanding is to be obtained of how the classical universe emerges from quantum geometric foam.
+One might then be tempted to suggest that, if the arguments presented in this paper hold up to greater scrutiny, it is LQG which is the ``\emph{true}'' theory of quantum gravity, whereas String Theory is merely an ``\emph{effective}'' theory. However, such a claim would again be based on the same sort of hubris which has affected the high energy community in the past. Though LQG might provide the microscopic description of the atoms of quantum geometry, without String Theory one cannot connect this microscopic description with the low energy physics of the world around us. Both are ultimately descriptions of Nature at different scales and without either theory we will not have a proper understanding of quantum gravity.
 
-It is my belief that Nature could not have been so malicious as to show us two avenues of investigation, with both being fully grounded in physical theory and both leading to concrete predictions about the nature of the physical universe, only for us to eventually discover that one or the other of those avenues belonged to the realm of ``fantasy'' all along.
+%Such a viewpoint will not be without its critics. String theorists would have to accept that the vast jungle of compactifications and the seemingly impenetrable string landscape is a consequence of ignoring the quantum nature of geometry. LQG-ists would have to give up the belief that framework of pure LQG alone can provide a complete theory of quantum gravity. They would have to accept that the tools and techniques of string theory are mandatory if a clear understanding is to be obtained of how the classical universe emerges from quantum geometric foam.
+
+It is my belief that Nature could not have been so malicious as to show us two avenues of investigation, with both being fully grounded in physical theory and both leading to concrete predictions about the nature of the physical universe, only for us to eventually discover that one or the other of those avenues belonged to the realm of fantasy all along.
 
 Much more work remains to be done to put the ideas of this essay on a firm mathematical footing, but it is my hope that string theorists, LQG-ists, CDT-ists and all other camps can come together to help construct a complete, consistent theory of quantum gravity so that we might finally be able to understand what lies ``beyond spacetime''.
 
-\textbf{Note:} This paper was submitted as an entry to the ``Beyond Spacetime, 2017'' essay contest on Sep 25, 2017. On Oct 31, 2017, a paper \cite{Huggett2017The-Atemporal} with similar thoughts was posted to arXiv. Though there is some philosophical overlap between the present paper and the one by Huggett and Wuthrich our approach is distinct from theirs.
+\textbf{Note:} A slightly modified version of this paper was submitted as an entry to the ``Beyond Spacetime, 2017'' essay contest on Sep 25, 2017.
 
 \section*{Acknowledgments}
 
 The author would like to dedicate this essay to his loving wife on the occassion of her birthday.
 
 \bibliographystyle{apsrev4-1}
-\bibliography{essay2017}
+\bibliography{unifying2017}
 
 %\printbibliography
 
