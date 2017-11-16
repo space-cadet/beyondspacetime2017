@@ -1,0 +1,2 @@
+# beyondspacetime2017
+We argue that String Theory and Loop Quantum Gravity can be thought of as describing different regimes of a single unified theory of quantum gravity. LQG can be thought of as providing the pre-geometric exoskeleton out of which macroscopic geometry emerges and String Theory then becomes the __effective__ theory which describes the dynamics of that exoskeleton. The core of the argument rests on the claim that the Nambu-Goto action of String Theory can be viewed as the expectation value of the LQG area operator evaluated on the string worldsheet.
