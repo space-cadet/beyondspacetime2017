@@ -129,7 +129,7 @@ Department of Physics, National Institute of Technology Karnataka (NITK), India 
 \section*{Abstract}
 {\bf
 % TODO: write your abstract here.
-We argue that String Theory and Loop Quantum Gravity can be thought of as describing different regimes of a single unified theory of quantum gravity. LQG can be thought of as providing the pre-geometric exoskeleton out of which macroscopic geometry emerges and String Theory then becomes the \emph{effective} theory which describes the dynamics of that exoskeleton. The core of the argument rests on the claim that the Nambu-Goto action of String Theory can be viewed as the expectation value of the LQG area operator evaluated on the string worldsheet. A concrete result is that the string tension $ T $ of String Theory and the Barbero-Immirzi parameter of LQG turn out to be proportional to each other.
+We argue that String Theory and Loop Quantum Gravity can be thought of as describing different regimes of a single unified theory of quantum gravity. LQG can be thought of as providing the pre-geometric exoskeleton out of which macroscopic geometry emerges and String Theory then becomes the \emph{effective} theory which describes the dynamics of that exoskeleton. The core of the argument rests on the claim that the Nambu-Goto action of String Theory can be viewed as the expectation value of the LQG area operator evaluated on the string worldsheet. A concrete result is that the string tension of String Theory and the Barbero-Immirzi parameter of LQG turn out to be proportional to each other.
 }
 
 
@@ -220,11 +220,19 @@ Substituting this expression for the classical variable in \eqref{area-2d-approx
 \begin{equation}\label{eqn:area-quantum}
 	\hat A_S = \hbar \kappa \sum_{I=1}^N \sqrt{ - \delta_{jk} \frac{\delta}{\delta A^z_j} \frac{\delta}{\delta A^z_k}} 
 \end{equation}
+
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.4\linewidth]{network-labelled-g}
+\caption{A graph state $ \Psi_\Gamma $ consists of an arbitrary graph $ \Gamma $, along with an assigment of an element of $ SU(2) $ (a holonomy) to each edge.}
+\label{fig:graph-state}
+\end{figure}
+
 Now in order to find the eigenvalues of this operator we have to act with it upon a state of quantum geometry. Such states are functionals of the form:
 \begin{equation}\label{eqn:graph-state}
 	\Psi_\Gamma = \psi(g_1,g_2,\ldots,g_n)
 \end{equation}
-where $ \Gamma $ is an arbitrary graph embedded in $ \Sigma $, $ g_1,\ldots,g_n $ are the holonomies \eqref{eqn:holonomy} of the connection evaluated along each edge of $ \Gamma $. The action of the momentum operator on the holonomy $ g_\gamma[A] $ is given by:
+where $ \Gamma $ is an arbitrary graph embedded in $ \Sigma $, $ g_1,\ldots,g_n $ are the holonomies \eqref{eqn:holonomy} of the connection evaluated along each edge of $ \Gamma $ (c.f. \autoref{fig:graph-state}). The action of the momentum operator on the holonomy $ g_\gamma[A] $ is given by:
 \begin{equation}\label{eqn:edge-momentum}
 	\frac{\delta}{\delta A^a_i} g_\gamma[A] = n_a (x) \tau^i g_\gamma[A]
 \end{equation}
@@ -241,7 +249,14 @@ where in the first line it is understood that the sum on the r.h.s is only over 
 \begin{equation}\label{eqn:area-quantum-3}
 	\hat A_S \Psi_\Gamma = 8 \pi l_{PL}^2 \sum_k \sqrt{ j_k (j_k + 1)} \Psi_\Gamma
 \end{equation}
-where the Planck length $ l_{PL} = \sqrt{\hbar G_N} $ (if $ c = 1 $), the sum is over all the points where edges of $ \Gamma $ intersect $ S $ and $ j_k $ is the eigenvalue of the Casimir operator $ \tau^2 $ along that edge.
+where the Planck length $ l_{PL} = \sqrt{\hbar G_N} $ (if $ c = 1 $), the sum is over all the points where edges of $ \Gamma $ intersect $ S $ and $ j_k $ is the eigenvalue of the Casimir operator $ \tau^2 $ along that edge (c.f. \autoref{fig:spin-state})
+
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.4\linewidth]{network-labelled-j}
+\caption{The action of the area operator on the graph state $ \Psi_\Gamma $, leads to a labeling of each edge by an eigenvalue of the $ \mf{su}(2) $ Casimir, which are nothing but spin labels labeled by half-integers $ j_i \in \mbb{Z}^+/2 $. In this representation, the graph state is referred to as a ``spin-network''}
+\label{fig:spin-state}
+\end{figure}
 
 The same operator can also be realized by starting from the expression for the triad observable $ P(S,f) $ in \eqref{eqn:triad} as follows \cite[Sec 5.1.1]{Ashtekar2004Background}:
 \begin{equation}\label{eqn:area-observable}
@@ -263,10 +278,18 @@ The quantum operator corresponding to $ A_S $ turns out to possess a minimum eig
 \begin{equation}\label{eqn:area-eigenvalue}
 	A_{S_I} = 8\pi l^2_{PL} \sqrt{j_I (j_I + 1)}
 \end{equation}
-where $ j_I $ denotes the representation of $ \mf{su}(2) $ assigned to the $ I^{\text{th}} $ cell of the surface $ S $. Since the smallest eigenvalue of the angular momentum operator is $ j = 1/2 $, the minimum quantum of area permitted by LQG is:
+where $ j_I $ denotes the representation of $ \mf{su}(2) $ assigned to the $ I^{\text{th}} $ cell of the surface $ S $ (c.f. \autoref{fig:area-puncture}). Since the smallest eigenvalue of the angular momentum operator is $ j = 1/2 $, the minimum quantum of area permitted by LQG is:
 \begin{equation}\label{eqn:area-minimum}
 	A_{min} = 2 \sqrt{3} \pi l^2_{PL} 
 \end{equation}
+
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.4\linewidth]{area_puncture}
+\caption{A single edge of a graph state punctures a surface and endows it with an area $ 8\pi l^2_{PL} \sqrt{j (j + 1)} $, where $ j $ is the $ SU(2) $ spin representation carried by the given edge.}
+\label{fig:area-puncture}
+\end{figure}
+
 
 This has an immediate implication for any field theories living on two-dimensional surfaces - the presence of a length scale implies that in such theories conformal symmetry will always be broken. We will see a bit later what this might imply when viewed from the perspective of string theory.
 
@@ -371,7 +394,7 @@ One might then be tempted to suggest that, if the arguments presented in this pa
 
 It is my belief that Nature could not have been so malicious as to show us two avenues of investigation, with both being fully grounded in physical theory and both leading to concrete predictions about the nature of the physical universe, only for us to eventually discover that one or the other of those avenues belonged to the realm of fantasy all along.
 
-Much more work remains to be done to put the ideas of this work on a firm mathematical footing. Several questions present themselves in search of a resolution. We have tried to list some of these questions and, wherever possible,  have suggested possible solutions, in the following\footnote{I am grateful to the referees of the ``Beyond Spacetime'' 2017 essay contest for making these valuable observations}:
+Much more work remains to be done to put the ideas of this work on a firm mathematical footing. Several questions present themselves in search of a resolution. We have tried to list some of these questions and  have suggested possible solutions, in the following\footnote{the author is grateful to the referees of the ``Beyond Spacetime'' 2017 essay contest for making these valuable observations}:
 \begin{enumerate}
 	\item \textbf{LQG areas correspond to spacelike surfaces, whereas the string worldsheet is not spacelike}
 	
@@ -379,15 +402,15 @@ Much more work remains to be done to put the ideas of this work on a firm mathem
 	
 	\item \textbf{What of the string spectrum?}
 	
-	since the string worldsheet is no longer a continuous surface, we cannot expect the strings themselves to be continuous objects. In this picture a string corresponds to any path connecting two vertices of a LQG graph state. Each such path is the union of edges connecting all the vertices which lie of that path. In the quantum theory each edge is labeled by a representation of $ SU(2) $. Thus, the LQG string (so to speak) $ l $, would be a piecewise continuous object, consisting of segments $ l_i$, labeled by $ \mf{su}(2) $ spins ($ S_i $), joined together by operators $ \mc{O}_{ij} : \mc{H}_i \otimes \mc{H}_j \Rightarrow \mbb{C} $ which map the Hilbert space of neighboring segments into each other: $ \mc{O}_{ij}(S_i, S_j) \in \mbb{C} $
+	since the string worldsheet is no longer a continuous surface, we cannot expect the strings themselves to be continuous objects. In this picture a string corresponds to any path connecting two vertices of a LQG graph state. Each such path is the union of edges connecting all the vertices which lie of that path. In the quantum theory each edge is labeled by a representation of $ SU(2) $. Thus, the LQG string (so to speak) $ l $, would be a piecewise continuous object, consisting of segments $ l_i$, labeled by $ \mf{su}(2) $ spins ($ S_i $), joined together by operators $ \mc{O}_{ij} : \mc{H}_i \otimes \mc{H}_j \Rightarrow \mbb{C} $ which map the Hilbert space of neighboring segments into each other: $ \mc{O}_{ij}(S_i, S_j) \in \mbb{C} $. In effect, the LQG string would be a one-dimensional spin system.
 	
 	\item \textbf{How is a path integral to be computed?}
 	
-	
+	the path integral represents all possible paths the string can take in going from an initial state to a final state. The resulting integral has a sum over all possible surfaces (worldsheets) which have the initial and final states as their boundaries. In the present case, such an integral would be replaced by a sum over all possible combinations of spins which puncture the worldsheet. Rather than varying the worldsheet we would need to vary the values of the spin-assignments to the graph edges which puncture the worldsheet. The end result, of course, will be the same. Only those configurations which extermize the total area would make the greatest contribution to the resulting sum (or integral).
 	
 \end{enumerate}
 
-but it is my hope that string theorists, LQG-ists, CDT-ists and all other camps can come together to help construct a complete, consistent theory of quantum gravity so that we might finally be able to understand what lies ``beyond spacetime''.
+This is by no means a complete list of objections to or criticisms of this proposal, but it is my hope that string theorists, LQG-ists, CDT-ists and all other camps can come together to help construct a complete, consistent theory of quantum gravity so that we might finally be able to understand what lies ``beyond spacetime''.
 
 \textbf{Note:} An earlier version of this paper was submitted as an entry to the ``Beyond Spacetime, 2017'' essay contest on Sep 25, 2017.
 
